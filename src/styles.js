@@ -1,10 +1,23 @@
 import styled from "styled-components"
 
-export const Conteiner = styled.div`
-    background-color: black;
+export const Container = styled.div`
+    background-color: #181f36;
+    display: flex;
+    align-items: center;
 `
 
-export const Text = styled.p`
-    color: white;
-    font-size: 50px;
-`
+export const TopoDoSite = styled.div``
+
+export const H1 = styled.h1``
+
+export const Form = styled.form``
+
+export const ConteinerInput = styled.input``
+
+export const InputLabel = styled.label``
+
+export const Input = styled.input``
+
+export const Button = styled.button``
+
+
