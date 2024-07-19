@@ -11,34 +11,34 @@ function App() {
       </TopoDoSite>
 
       <Form>
-        <H1>Cadastro de Usuario</H1>
+        <H1>Agende sua Depilação</H1>
 
         <ConteinerInput>
-          <div>
+          
             <div>
               <InputLabel>
-              Nome<span>*</span>
+                Nome<span> *</span>
               </InputLabel>
               <Input type="Nome" placeholder="Digite seu Nome" />
             </div>
 
             <div>
               <InputLabel>
-              idade<span>*</span>
+                idade<span> *</span>
               </InputLabel>
-              <Input type="Idade" placeholder="Digite Sua idade" />
+              <Input type="Horario" placeholder="Digite seu Horário" />
             </div>
 
-            <div>
-              <InputLabel>
-              Telefone<span>*</span>
-              </InputLabel>
-              <Input type="Telefone" placeholder="Digite seu Numero de Telefone" />
-            </div>
-
-          </div>
+          
 
         </ConteinerInput>
+
+        <div>
+          <InputLabel>
+            Telefone<span> *</span>
+          </InputLabel>
+          <Input type="Telefone" placeholder="Digite seu Numero de Telefone" />
+        </div>
 
         <Button>Cadastrar Usuario</Button>
       </Form>
