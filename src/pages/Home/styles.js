@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-     background: -webkit-linear-gradient(29deg, #f2f2f2,#ea4386,#99055b); background: linear-gradient(29deg, #f2f2f2,#ea4386,#99055b);                                                               ;
+    background: -webkit-linear-gradient(29deg, #f2f2f2,#ea4386,#99055b); background: linear-gradient(29deg, #f2f2f2,#ea4386,#99055b);                                                               ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,14 +21,16 @@ export const TopoDoSite = styled.div`
     justify-content: center;
 
     img {
-        max-height: 100%;
-        max-height: 100%;
+        
+        max-height: 500%;
+        max-height: 140%;
     }
 
 
 `
 
 export const H1 = styled.h1`
+    font-family: "Montserrat", sans-serif;
     color: white;
     text-align: center;
     font-size: 40px;
@@ -75,10 +77,19 @@ export const Button = styled.button`
     border-radius: 15px;
     background-color: #ea4386;
     font-size: 16px;
-    color: white;
+    color: yellow;
     padding: 16px 32px;
     width: fit-content;
     cursor: pointer;
+    border-radius: 30px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
 `
 
 

@@ -1,5 +1,5 @@
 import { Container, H1, TopoDoSite, Form, ConteinerInput, Input, InputLabel, Button } from "./styles"
-import UsersImage from './assets/users.png'
+import UsersImage from '../../assets/photo1.jpg'
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       </TopoDoSite>
 
       <Form>
-        <H1>Agende sua Depilação</H1>
+        <H1>New Style </H1>
 
         <ConteinerInput>
           
