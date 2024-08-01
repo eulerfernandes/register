@@ -1,8 +1,18 @@
+import { useRef } from "react"
+
 import { Container, H1, TopoDoSite, Form, ConteinerInput, Input, InputLabel, Button } from "./styles"
 import UsersImage from '../../assets/photo1.jpg'
 
 
-function App() {
+function Home() {
+
+  const inputName = useRef()
+  const inputAge = useRef()
+  const inputTelephone = useRef()
+
+  function RegisterNewUser(){
+    console.log(inputName)
+  }
 
   return (
     <Container>
@@ -19,14 +29,14 @@ function App() {
               <InputLabel>
                 Nome<span> *</span>
               </InputLabel>
-              <Input type="Nome" placeholder="Digite seu Nome" />
+              <Input type="Nome" placeholder="Digite seu Nome" ref={inputName} />
             </div>
 
             <div>
               <InputLabel>
                 idade<span> *</span>
               </InputLabel>
-              <Input type="Horario" placeholder="Digite seu Horário" />
+              <Input type="Horario" placeholder="Digite seu Horário" ref={inputAge}/>
             </div>
 
           
@@ -37,15 +47,15 @@ function App() {
           <InputLabel>
             Telefone<span> *</span>
           </InputLabel>
-          <Input type="Telefone" placeholder="Digite seu Numero de Telefone" />
+          <Input type="Telefone" placeholder="Digite seu Numero de Telefone" ref={inputTelephone} />
         </div>
 
-        <Button>Cadastrar Usuario</Button>
+        <Button type="button" onClick={RegisterNewUser}>Cadastrar Usuario</Button>
       </Form>
     </Container>
 
   )
 }
 
-export default App
+export default Home
 
